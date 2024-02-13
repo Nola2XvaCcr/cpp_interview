@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003*>
+<Itemroup>
+<Filter Include="Source Files">
+<Uniqueldentifier>4FC/37F1-C7A5-4376-A066-2A32D752A2FFJ</Uniqueldentifier>
+<Extensions>cpp;c;c;cxx;def;odl;idl;hpj;bat;asm; asmx</Extensions>
+<Filter>
+<Filter Include="Header Files">
+<Uniqueldentifier>93995380-89BD-4604-88EB-625FBE52EBFB}</Uniqueldentifier>
+<Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+</Filter>
+<Filter Include="Resource Files">
+<Uniqueldentifier>67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</Uniqueldentifier>
+<Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mcribbon-ms</Extensions>
+</Filter>
+</ItemGroup>
+<ItemGroup>
+<ClCompile Include-"testing-cpp">
+<Filter>Source Files</Filter>
+</ClCompile>
+<ClCompile Include="q_01_various_examples.cpp">
+<Filter>Source Files</Filter>
+</ClCompile>
+<ClCompile Include="q_02_various_examples.cpp">
+<Filter>Source Files</Filter>
+</ClCompile>
+<ClCompile Include="q_03_various_examples.cpp">
+<Filter>Source Files</Filter>
+</ClCompile>
+<ClCompile Include="q_04_various_examples.cpp">
+<Filter>Source Files</Filter>
+</ClCompile>
+<ClCompile Include="q_05_various_examples.cpp">
+<Filter>Source Files</Filter>
+</ClCompile>
+</ItemGroup>
+<ItemGroup>
+<ClInclude Include="q_01_various_examples.h">
+<Filter>Header Files</Filter>
+</CInclude>
+<ClInclude Include="q_02_various_examples.h">
+<Filter>Header Files</Filter>
+</ClInclude>
+<ClInclude Include="q_03_various_examples.h">
+<Filter>Header Files</Filter>
+</CInclude>
+<ClInclude Include="q_04_various_examples.h">
+<Filter>Header Files</Filter>
+</ClInclude>
+<ClInclude Include="q_05_various_examples.h">
+<Filter>Header Files</Filter>
+</ClInclude>
+</ItemGroup>
+</Project>
