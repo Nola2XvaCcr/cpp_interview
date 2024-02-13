@@ -1,0 +1,50 @@
+‹?xml version="1.0" encoding="utf-8"?>
+‹Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+< ItemGroup Label="ProjectConfigurations">
+< ProjectConfiguration Include="Debug|Win32">
+‹Configuration>Debug</Configuration>
+‹Platform>Win32</Platform>
+‹/ProjectConfiguration>
+< ProjectConfiguration Include="Release|Win32">
+‹ Configuration>Release‹/Configuration>
+‹Platform>Win32</Platform>
+</ProjectConfiguration>
+< ProjectConfiguration Include="Debug|×64">
+‹ Configuration>Debug</Configuration>
+‹Platform>x64</Platform>
+</ProjectConfiguration>
+< ProjectConfiguration Include="Release| x64">
+‹ Configuration>Release‹/Configuration>
+‹Platform>x64</Platform>
+</ProjectConfiguration>
+</ItemGroup>
+‹PropertyGroup Label="Globals">
+‹ProjectGuid>{5C46A212-B0D8-45CE-AE9E-E07FE953BB22)</ProjectGuid>
+< RootNamespace>cpp_testing</RootNamespace>
+< WindowsTargetPlatformVersion>10.0‹/WindowsTargetPlatformVersion>
+</PropertyGroup>
+«Import Project="$(VCTargetsPath) \Microsoft.Cpp.Default-props" /›
+<Import Project="cp_testing-props" /›
+‹PropertyGroup Condition="'$(Configuration) |$(Platform) '== 'Debug|Win32'" Label-"Configuration">
+‹ConfigurationType>Application</ConfigurationType>
+<UseDebugLibraries>true</UseDebugLibraries>
+< PlatformToolset>v143</PlatformToolset>
+‹CharacterSet>MultiByte</CharacterSet>
+</PropertyGroup>
+‹PropertyGroup Condition="'$(Configuration) |$(Platform) '=='Release|Win32'" Label-"Configuration">
+‹ConfigurationType>Application</ConfigurationType>
+«UseDebugLibraries>false</UseDebugLibraries>
+< PlatformToolset>v143</PlatformToolset>
+‹WholeProgramOptimization>true</WholeProgramOptimization>
+‹CharacterSet>MultiByte</CharacterSet>
+</PropertyGroup>
+‹PropertyGroup Condition="'$(Configuration) |$(Platform) '== 'Debug|x64'" Label="Configuration">
+‹ConfigurationType>Application</ConfigurationType>
+< UseDebugLibraries>true</UseDebugLibraries>
+< PlatformToolset>v143</PlatformToolset>
+«CharacterSet>MultiByte</CharacterSet>
+</PropertyGroup>
+‹PropertyGroup Condition="'$(Configuration) |$(Platform) '== 'Release|x64'" Label="Configuration">
+‹ConfigurationType>Application</ConfigurationType>
+< UseDebugLibraries>false</UseDebugLibraries>
+‹PlatformToolset>v143< PlatformToolset>
