@@ -6,6 +6,8 @@ Simple driver file testing-cpp with a menu of examples:
 3. `q_03`: Question on implementation of a matrix class.
 4. `q_04`: Question on code reading. Understanding codes without running
 5. `q_05`: Question on shared pointer. Understanding on the shared pointer machanism
+
+
 Some Generic Programming questions:
 1. What is the difference between stack and heaps?
 2. Compare garbage collection and reference counter.
