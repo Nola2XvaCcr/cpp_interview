@@ -1,11 +1,11 @@
 # C++ Interview Questions
 Some C++ interview questions / examples.
 Simple driver file testing-cpp with a menu of examples:
-*q_01*: Some questions on STL and algorithms.
-2. 'q_02": Some questions on inheritance.
-3. 'q_03*: Question on implementation of a matrix class.
-*q_04*: Question on code reading. Understanding codes without running
-5. "q_05": Question on shared pointer. Understanding on the shared pointer machanism
+1. `q_01`: Some questions on STL and algorithms.
+2. `q_02`: Some questions on inheritance.
+3. `q_03`: Question on implementation of a matrix class.
+4. `q_04`: Question on code reading. Understanding codes without running
+5. `q_05`: Question on shared pointer. Understanding on the shared pointer machanism
 Some Generic Programming questions:
 1. What is the difference between stack and heaps?
 2. Compare garbage collection and reference counter.
