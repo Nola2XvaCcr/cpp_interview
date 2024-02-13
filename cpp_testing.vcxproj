@@ -1,50 +1,163 @@
-‹?xml version="1.0" encoding="utf-8"?>
-‹Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-< ItemGroup Label="ProjectConfigurations">
-< ProjectConfiguration Include="Debug|Win32">
-‹Configuration>Debug</Configuration>
-‹Platform>Win32</Platform>
-‹/ProjectConfiguration>
-< ProjectConfiguration Include="Release|Win32">
-‹ Configuration>Release‹/Configuration>
-‹Platform>Win32</Platform>
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<ItemGroup Label="ProjectConfigurations">
+<ProjectConfiguration Include="Debug|Win32">
+<Configuration>Debug</Configuration>
+<Platform>Win32</Platform>
 </ProjectConfiguration>
-< ProjectConfiguration Include="Debug|×64">
-‹ Configuration>Debug</Configuration>
-‹Platform>x64</Platform>
+<ProjectConfiguration Include="Release|Win32">
+<Configuration>Release</Configuration>
+<Platform>Win32</Platform>
 </ProjectConfiguration>
-< ProjectConfiguration Include="Release| x64">
-‹ Configuration>Release‹/Configuration>
-‹Platform>x64</Platform>
+<ProjectConfiguration Include="Debug|×64">
+<Configuration>Debug</Configuration>
+<Platform>x64</Platform>
+</ProjectConfiguration>
+<ProjectConfiguration Include="Release|x64">
+<Configuration>Release</Configuration>
+<Platform>x64</Platform>
 </ProjectConfiguration>
 </ItemGroup>
-‹PropertyGroup Label="Globals">
-‹ProjectGuid>{5C46A212-B0D8-45CE-AE9E-E07FE953BB22)</ProjectGuid>
-< RootNamespace>cpp_testing</RootNamespace>
-< WindowsTargetPlatformVersion>10.0‹/WindowsTargetPlatformVersion>
+<PropertyGroup Label="Globals">
+<ProjectGuid>{5C46A212-B0D8-45CE-AE9E-E07FE953BB22)</ProjectGuid>
+<RootNamespace>cpp_testing</RootNamespace>
+<WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
 </PropertyGroup>
-«Import Project="$(VCTargetsPath) \Microsoft.Cpp.Default-props" /›
-<Import Project="cp_testing-props" /›
-‹PropertyGroup Condition="'$(Configuration) |$(Platform) '== 'Debug|Win32'" Label-"Configuration">
-‹ConfigurationType>Application</ConfigurationType>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default-props" />
+<Import Project="cp_testing-props" />
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label-"Configuration">
+<ConfigurationType>Application</ConfigurationType>
 <UseDebugLibraries>true</UseDebugLibraries>
-< PlatformToolset>v143</PlatformToolset>
-‹CharacterSet>MultiByte</CharacterSet>
+<PlatformToolset>v143</PlatformToolset>
+<CharacterSet>MultiByte</CharacterSet>
 </PropertyGroup>
-‹PropertyGroup Condition="'$(Configuration) |$(Platform) '=='Release|Win32'" Label-"Configuration">
-‹ConfigurationType>Application</ConfigurationType>
-«UseDebugLibraries>false</UseDebugLibraries>
-< PlatformToolset>v143</PlatformToolset>
-‹WholeProgramOptimization>true</WholeProgramOptimization>
-‹CharacterSet>MultiByte</CharacterSet>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label-"Configuration">
+<ConfigurationType>Application</ConfigurationType>
+<UseDebugLibraries>false</UseDebugLibraries>
+<PlatformToolset>v143</PlatformToolset>
+<WholeProgramOptimization>true</WholeProgramOptimization>
+<CharacterSet>MultiByte</CharacterSet>
 </PropertyGroup>
-‹PropertyGroup Condition="'$(Configuration) |$(Platform) '== 'Debug|x64'" Label="Configuration">
-‹ConfigurationType>Application</ConfigurationType>
-< UseDebugLibraries>true</UseDebugLibraries>
-< PlatformToolset>v143</PlatformToolset>
-«CharacterSet>MultiByte</CharacterSet>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+<ConfigurationType>Application</ConfigurationType>
+<UseDebugLibraries>true</UseDebugLibraries>
+<PlatformToolset>v143</PlatformToolset>
+<CharacterSet>MultiByte</CharacterSet>
 </PropertyGroup>
-‹PropertyGroup Condition="'$(Configuration) |$(Platform) '== 'Release|x64'" Label="Configuration">
-‹ConfigurationType>Application</ConfigurationType>
-< UseDebugLibraries>false</UseDebugLibraries>
-‹PlatformToolset>v143< PlatformToolset>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+<ConfigurationType>Application</ConfigurationType>
+<UseDebugLibraries>false</UseDebugLibraries>
+<PlatformToolset>v143<PlatformToolset>
+<WholeProgramOptimization>true</WholeProgramOptimization>
+<CharacterSet>MultiByte</CharacterSet>
+</PropertyGroup>
+<Import Project="$(VCTargetsPath)\Microsoft. Cpp-props" />
+<ImportGroup Label="ExtensionSettings">
+</ImportGroup>
+<ImportGroup Label="Shared">
+<ImportGroup>
+<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+<Import Project="$(UserRootDir) Microsoft.Cpp-$(Platform)-user-props" Condition="exists('$(UserRootDir)\Microsoft-Cpp.$(Platform)-user-props')" Label="LocalAppDataPlatform" />
+</ImportGroup>
+<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+<Import Project="$(UserRootDir)\Microsoft Cpp-$(Platform) user-props™ Condition="exists('$(UserRootDir)\Microsoft-Cpp.$(Platform)-user-props')™ Label="LocalAppDataPlatform" />
+</ImportGroup>
+<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|×64'">
+<Import Project="$(UserRootDir) Microsoft.Cpp-$(Platform)-user-props" Condition="exists('$(UserRootDir)\Microsoft-Cpp.$(Platform)-user-props')" Label="LocalAppDataPlatform" />
+</ImportGroup>
+<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|×64'">
+<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform)-user-props" Condition="exists('$(UserRootDir)\Microsoft-Cpp.$(Platform)-user-props')" Label="LocalAppDataPlatform" />
+</ImportGroup>
+<PropertyGroup Label="UserMacros" />
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+<OutDir>build\$(Platform)\$(Configuration)\</OutDir> <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+</PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+<OutDir>build\$(Platform)\$(Configuration)\</OutDir> <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+</PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|×64'">
+<OutDir>build $(Platform)\$(Configuration)\</OutDir> <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+</PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+<OutDir>build\$(Platform)\$(Configuration)\</OutDir> <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+</PropertyGroup>
+<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+<ClCompile>
+<WarningLevel>Level</WarningLevel>
+<Optimization>Disabled</Optimization>
+<SDLCheck>true</SDLCheck>
+<AdditionalOptions>$(additionalWarning) %(AdditionalOptions)</AdditionalOptions>
+<AdditionalIncludeDirectories>C:\Nola2_Dependencies\binaries\Windows10_64\include\ql;C:\Nola2_Dependencies\binaries\Windows10_64\include\boost-1_72; </AdditionalIncludeDirectories> 
+<PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+</ClCompile>
+<Link>
+<SubSystem>Console</SubSystem>
+<AdditionalLibraryDirectories>C:\Nola2_Dependencies\binaries\Windows10_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+</Link>
+</ItemDefinitionGroup>
+<ItemDefinitionGroup Condition="*$(Configuration)|$(Platform)'=='Debug|×64'">
+<ClCompile>
+<WarningLevel>Level3</WarningLevel>
+<Optimization>Disabled</Optimization>
+<SDLCheck>true</SDLCheck>
+<AdditionalOptions>$(additionalWarning) %(AdditionalOptions)</AdditionalOptions>
+<AdditionalIncludeDirectories>C:\Nola2_Dependencies\binaries\Windows10_64\include\ql;C:\Nola2_Dependencies\binaries\Windows10_64\include\boost-1_72; </AdditionalIncludeDirectories> 
+<PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS; _CRT_SECURE _NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+</ClCompile>
+<Link>
+<SubSystem>Console</SubSystem>
+<AdditionalLibraryDirectories>C:\Nola2_Dependencies\binaries\Windows10_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+</Link>
+</ItemDefinitionGroup>
+<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+<ClCompile>
+<WarningLevel>Level</WarningLevel>
+<Optimization>MaxSpeed</Optimization>
+<FunctionLevelLinking>true</FunctionLevelLinking>
+<IntrinsicFunctions>true</IntrinsicFunctions>
+<SDLCheck>true</SDLCheck>
+<AdditionalOptions>$(additionalWarning) %(AdditionalOptions)</AdditionalOptions>
+<AdditionalIncludeDirectories>C:\Nola2_Dependencies\binaries\Windows10_64\include\ql;C:\Nola2_Dependencies\binaries\Windows10_64\include\boost-1_72; </AdditionalIncludeDirectories>
+<PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;% PreprocessorDefinitions)</PreprocessorDefinitions>
+</ClCompile>
+<Link>
+<EnableCOMDATFolding>true</EnableCOMDATFolding>
+<OptimizeReferences>true</OptimizeReferences>
+<SubSystem>Console</SubSystem>
+<AdditionalLibraryDirectories>C:\Nola2_Dependencies\binaries\Windows10_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+</Link>
+</ItemDefinitionGroup>
+<ItemDefinitionGroup Condition="*$(Configuration)|$(Platform)'=='Release|x64'">
+<ClCompile>
+<WarningLevel>Level</WarningLevel>
+<Optimization>MaxSpeed</Optimization>
+<FunctionLevelLinking>true</FunctionLevelLinking>
+<IntrinsicFunctions>true</Intrinsicunctions>
+<SDLCheck>true</SDLCheck>
+<AdditionalOptions>$(additionalWarning) %(AdditionalOptions)</AdditionalOptions>
+<AdditionalIncludeDirectories>C:\Nola2_Dependencies\binaries\Windows10_64\include\ql;C:\Nola2_Dependencies\binaries\Windows10_64\include\boost-1_72; </AdditionalIncludeDirectories> <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS; _CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+</ClCompile>
+<Link>
+<EnableCOMDATFolding>true</EnableCOMDATFolding>
+<OptimizeReferences>true</OptimizeReferences>
+<SubSystem>Console</SubSystem>
+<AdditionalLibraryDirectories>C:\Nola2_Dependencies\binaries\Windows10_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+</Link>
+</ItemDefinitionGroup>
+<ItemGroup>
+<ClCompile Include="q_01_various_examples.cpp" />
+<ClCompile Include="q_02_various_examples.cpp" />
+<ClCompile Include="q_03_various_examples.cpp" />
+<ClCompile Include="q 04 various examples.cpp" />
+</ItemGroup>
+<ItemGroup>
+<ClInclude Include="q_01_various_examples.h" />
+<ClInclude Include="q_02_various_examples.h" />
+<ClInclude Include="q_03_various_examples.h" />
+<ClInclude Include="q_04_various_examples.h" />
+<ClInclude Include="q_05_various_examples.h" />
+</Itemroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+<ImportGroup Label="ExtensionTargets">
+</ImportGroup>
+</Project>
